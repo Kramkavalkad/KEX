@@ -1,0 +1,16 @@
+// test
+digraph gazeDataOutput16 {
+	node [group=a]
+	Questions
+	Answers
+	Feedback
+	Feedback -> Questions [label=13]
+	Questions -> Answers [label=30]
+	Answers -> Feedback [label=11]
+	Feedback -> Answers [label=9]
+	Answers -> Questions [label=28]
+	Questions -> Feedback [label=11]
+	edge [style=invis]
+	Questions -> Answers
+	Answers -> Feedback
+}
